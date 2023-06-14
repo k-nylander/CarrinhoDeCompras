@@ -1,13 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package k.nylander.carrinhodecompras;
 
-/**
- *
- * @author kauan
- */
+import k.nylander.carrinhodecompras.Resources.Carrinho;
+import k.nylander.carrinhodecompras.Resources.Produto;
+
 public class CarrinhoDeCompras {
     public static void main(String[] args) {
         Produto p1 = new Produto(123,"Nescau",10.49,0.5);
@@ -20,6 +15,7 @@ public class CarrinhoDeCompras {
         c1.finalizar();
         
         Carrinho c2 = new Carrinho(p2,p2,p5,p4,p1);
+        c2.adiciona(p2);
         c2.finalizar();
     }
 }
